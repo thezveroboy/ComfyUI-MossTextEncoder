@@ -22,6 +22,7 @@ class TextEncodeMossImage:
     def INPUT_TYPES(cls):
         return {
             "required": {
+                "clip": ("CLIP",),
                 "prompt": ("STRING", {
                     "multiline": True,
                     "dynamicPrompts": True,
